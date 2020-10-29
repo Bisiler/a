@@ -1,0 +1,173 @@
+:root {
+    --dark-color: rgb(0, 0, 0);
+    --medium-color:gray;
+    --light-color:rgba(255, 255, 255, 0.082);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+    }
+
+body{
+    background-color:black;
+    color:whitesmoke;
+text-align: center;
+font-family: 'Anton', sans-serif;
+
+font-family: 'Bangers', cursive;
+}
+header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, var(--light-color), var(--dark-color)), url("../img/Gennadij-Gorin.jpg");
+    background-size: cover;
+    background-position: bottom;
+    animation-name: genka;
+    animation-duration: 6s;
+    clip-path: polygon(0 1%, 93% 0, 100% 100%, 3% 100%);
+}
+.text-box {
+    position: absolute;
+    top: 40%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading-primary {
+    text-transform: uppercase;
+}
+.kek5 {
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 0rem;
+    margin: 0.2rem;
+    opacity: 0;
+    animation-name: helpme;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property:transform;
+    transition-duration: 3s;
+}
+.helpme:hover {
+    transform: rotateY(180deg);
+}
+.main{
+    animation-name:orte;
+    animation-duration: 20s;
+}
+@keyframes helpme {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    animation-name: help1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out
+}
+.heading-primary-main{
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    animation-name: omg;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out
+}
+#showcase h2 {
+    font-size: 3.5rem;
+    line-height: 1.3;
+    position: relative;
+    animation-name: okda;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    }
+    .btn {
+        display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 2px solid #fff;
+    padding: 1rem;
+    margin: 2rem;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition-property:transform;
+    transition-duration: 3s;
+    }
+
+@keyframes help1 {
+    0%{
+        opacity:0;
+        transform: translateX(100px);
+        transform: rotateY(100px)
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0);
+        transform: rotateY(0);
+        
+    }
+}
+    @keyframes genka {
+        0%{
+            opacity:0;
+
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes orte{
+        0%{
+            opacity: 0
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity:1;
+        }
+    }
+    @keyframes UorteRotVtorte {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes omg {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .btn:hover {
+        transform: rotateY(180deg)
+        }
+        
+        @keyframes btn{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+        }
